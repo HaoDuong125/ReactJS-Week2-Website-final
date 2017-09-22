@@ -2,14 +2,14 @@ import React from "react";
 
 import Article from "../components/Article";
 
-export default class Archives extends React.Component {
+export default class Category extends React.Component {
   render() {
     const { query } = this.props.location;
     const { params } = this.props;
     const { article } = params;
     const { date, filter } = query;
 
-    const Articles = [
+    const Categories = [
       "Samsung",
       "LG",
       "Apple",
@@ -19,9 +19,9 @@ export default class Archives extends React.Component {
 
     return (
       <div>
-        <h1>Archives</h1>
+        <h1>Category</h1>
         article: {article}, date: {date}, filter: {filter}
-        <div class="row">{Articles}</div>
+        <div class="row">{Categories}</div>
       </div>
     );
   }

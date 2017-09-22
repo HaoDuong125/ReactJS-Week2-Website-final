@@ -1,0 +1,29 @@
+var AppDispatcher = require('../dispatcher/AppDispatcher');
+var FluxCartConstants = require('../constants/FluxCartConstants');
+var FluxActionProduct = {
+	
+	// add product
+	addToProduct: function (sku, update) {
+    AppDispatcher.handleAction({
+      actionType: FluxCartConstants.CART_ADD,
+      sku: sku,
+      update: update
+    })
+  },
+
+  // Remove product
+  removeFromCart: function (sku) {
+    AppDispatcher.handleAction({
+      actionType: FluxCartConstants.CART_REMOVE,
+      sku: sku
+    })
+  },
+
+  // Update product
+  updateCartVisible: function (cartVisible) {
+    AppDispatcher.handleAction({
+      actionType: FluxCartConstants.CART_VISIBLE,
+      cartVisible: cartVisible
+    })
+  }
+};
