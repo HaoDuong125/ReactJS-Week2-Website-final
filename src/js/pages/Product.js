@@ -2,21 +2,26 @@ import React from "react";
 
 import Article from "../components/Article";
 
-export default class Featured extends React.Component {
+export default class Product extends React.Component {
   render() {
-    const Articles = [
-      "TiVi",
-      "Dien Thoai",
-      "Laptop",
-      "Dong Ho",
+    const Products = [
+      "TiVi- LG",
+      "TiVi- Panasonic",
+      "TiVi- Samsung",
+      "I=Phone",
+      "Samsung Galaxy Note",
+      "Xiaomi",
+      "DELL",
+      "Appple",
+      "Asus",
     ].map((title, i) => <Article key={i} title={title}/> );
 
     const adText = [
-      "Thong tin Danh Muc San Pham",
+      "Information Products",
     ];
 
     const randomAd = adText[Math.round( Math.random() * (adText.length-1) )];
-    console.log("featured");
+    console.log("product");
     return (
       <div>
         <div class="row">
@@ -27,7 +32,7 @@ export default class Featured extends React.Component {
           </div>
         </div>
 
-        <div class="row">{Articles}</div>
+        <div class="row">{Products}</div>
       </div>
     );
   }
