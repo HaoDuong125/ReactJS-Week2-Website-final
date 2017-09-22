@@ -7,7 +7,7 @@ export default class Article extends React.Component {
     return (
       <div class="col-md-4">
         <h4>{title}</h4>
-        <a class="btn btn-default" href="#">List Item</a>
+        <a class="btn btn-default" href="#">More information</a>
       </div>
 
     );
