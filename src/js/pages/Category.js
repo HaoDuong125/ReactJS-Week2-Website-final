@@ -20,7 +20,7 @@ export default class Category extends React.Component {
     return (
       <div>
         <h1>Category</h1>
-        article: {article}, date: {date}, filter: {filter}
+       
         <div class="row">{Categories}</div>
       </div>
     );
